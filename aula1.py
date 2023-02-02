@@ -1,4 +1,4 @@
-www.google.comimport pyautogui
+import pyautogui
 import mouse
 import keyboard 
 import time
