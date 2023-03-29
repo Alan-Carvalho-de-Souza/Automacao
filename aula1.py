@@ -24,7 +24,7 @@ pyautogui.write("www.google.com")
 mouse.move(1848, 305, 3)
 mouse.click('left')
 time.sleep(3)
-keyboard.write('Copa do mundo 2022')
+keyboard.write('Copa libertadores 2023')
 keyboard.press('enter')
 time.sleep(5)
 
