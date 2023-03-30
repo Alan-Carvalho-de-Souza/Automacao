@@ -19,18 +19,20 @@ pesquisa = input('Digite o assunto a ser pesquisado: ')
 time.sleep(5)
 pyautogui.press("win")
 pyautogui.write("chrome")
-time.sleep(5)
+time.sleep(3)
 pyautogui.press("enter")
 pyautogui.hotkey ("ctrl", "t") 
 mouse.move(1499, 86, 3)
 pyautogui.click(1499, 86, 1)
 pyautogui.write("www.google.com")
+pyautogui.press('enter')
 mouse.move(1848, 305, 3)
 mouse.click('left')
 time.sleep(3)
 keyboard.write(pesquisa)
 keyboard.press('enter')
 time.sleep(5)
+
 
 
 
