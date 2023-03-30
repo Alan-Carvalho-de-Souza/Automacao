@@ -14,8 +14,12 @@ import time
 # mouse.move -> move o mouse para as coordenadas indicadas no pixel da tela, através do eixo X e Y
 # pyautogui.click -> clica nas coordenas indicadas no pixel da tela através do eixo X e Y, também pode ser utilizado com imagens.
 # time.sleep -> Utilizado para determinar um intervalo de tempo, para executar a próxima ação no código.
+pesquisa = input('Digite o assunto a ser pesquisado.')
+
+time.sleep(5)
 pyautogui.press("win")
 pyautogui.write("chrome")
+time.sleep(5)
 pyautogui.press("enter")
 pyautogui.hotkey ("ctrl", "t") 
 mouse.move(1499, 86, 3)
@@ -24,7 +28,7 @@ pyautogui.write("www.google.com")
 mouse.move(1848, 305, 3)
 mouse.click('left')
 time.sleep(3)
-keyboard.write('Copa libertadores 2023')
+keyboard.write(pesquisa)
 keyboard.press('enter')
 time.sleep(5)
 
