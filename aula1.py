@@ -42,7 +42,7 @@ time.sleep(2)
 '''
 
 #print(pyautogui.position())
-os.chdir('C:\Users\AlanCarvalhodeSouza\OneDrive - KEEGGO TECHNOLOGY BRASIL S A\Documentos\Intensivão de Python\Aula 1')
+os.chdir('C:/Users/AlanCarvalhodeSouza/Documents/Intensivão de Python/Aula 1')
 tabela = pd.read_excel('Vendas - Dez.xlsx')
 print(tabela)
 
