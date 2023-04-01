@@ -9,8 +9,9 @@ import pyautogui as pa
 import time
 import pyperclip
 
-#time.sleep(4)
+#time.sleep(5)
 #print(pa.position())
+
 
 pa.click(x=556, y=748)
 time.sleep(2)
@@ -38,4 +39,13 @@ Atenciosamente.'''
 
 pyperclip.copy(texto)
 pa.hotkey('ctrl', 'v')
+time.sleep(2)
+pa.click(x=964, y=702)
+time.sleep(1)
 
+orcamento = f'''C:/Users/AlanCarvalhodeSouza/Documents/Orçamento 2023.xlsx'''
+pyperclip.copy(orcamento)
+time.sleep(2)
+pa.hotkey('ctrl', 'v')
+time.sleep(1)
+pa.press('enter')
