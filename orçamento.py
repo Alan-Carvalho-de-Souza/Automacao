@@ -43,9 +43,14 @@ time.sleep(2)
 pa.click(x=964, y=702)
 time.sleep(1)
 
-orcamento = f'''C:/Users/AlanCarvalhodeSouza/Documents/Orçamento 2023.xlsx'''
-pyperclip.copy(orcamento)
-time.sleep(2)
-pa.hotkey('ctrl', 'v')
+pa.click(x=382, y=641)
+pasta = f'''C:/Users/AlanCarvalhodeSouza/Documents'''
+pyperclip.copy(pasta)
 time.sleep(1)
 pa.press('enter')
+time.sleep(2)
+pa.click(x=442, y=746)
+time.sleep(1)
+pyperclip.copy('Orçamento 2023')
+time.sleep(1)
+pa.hotkey('ctrl', "v")
