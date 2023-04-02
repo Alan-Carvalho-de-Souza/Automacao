@@ -11,11 +11,11 @@ import pyautogui as pa
 import time
 import pyperclip
 
-time.sleep(5)
-print(pa.position())
+#time.sleep(5)
+#print(pa.position())
 
-"""
-pa.click(x=556, y=748)
+
+pa.click(x=514, y=750)
 time.sleep(2)
 pa.write('gmail.com')
 pa.press('enter')
@@ -27,7 +27,7 @@ pa.press('tab')
 time.sleep(3)
 pa.press('tab')
 time.sleep(2)
-pyperclip.copy('Teste de automação') # Quando houver caracter especial utilizar pyperclip.copy
+pyperclip.copy('Teste de automação 5') # Quando houver caracter especial utilizar pyperclip.copy
 pa.hotkey('ctrl', 'v')
 time.sleep(1)
 pa.press('tab')
@@ -44,22 +44,20 @@ pa.hotkey('ctrl', 'v')
 time.sleep(2)
 pa.click(x=964, y=702)
 time.sleep(1)
-"""
-"""
 pa.click(x=382, y=641)
-pasta = f'''C:/Users/AlanCarvalhodeSouza/Documents'''
+pasta = f(r'''C:\Users\alan_\Documents\Excel''')
 pyperclip.copy(pasta)
 time.sleep(1)
 pa.press('enter')
 time.sleep(2)
 pa.click(x=359, y=420)
 time.sleep(1)
-pyperclip.copy('Orçamento 2023')
+pyperclip.copy('Planilha de Orçamento')
 time.sleep(1)
 pa.hotkey('ctrl', "v")
 pa.press('enter')
 time.sleep(3)
 pa.click(x=837, y=702)
 print('Seu e-mail foi enviado com sucesso.')
-"""
+
 
