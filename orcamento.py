@@ -13,7 +13,7 @@ import pyperclip
 #print(pa.position())
 
 
-pa.click(x=556, y=748)
+pa.click(x=492, y=752)
 time.sleep(2)
 pa.write('gmail.com')
 pa.press('enter')
@@ -21,6 +21,9 @@ time.sleep(4)
 pa.click(x=75, y=207)
 time.sleep(4)
 pa.write('alan_carvalho_96@hotmail.com')
+pa.press('tab')
+time.sleep(1)
+pa.write('gustavosfaria2005@gmail.com')
 pa.press('tab')
 time.sleep(4)
 pa.press('tab')
@@ -57,6 +60,7 @@ pa.hotkey('ctrl', "v")
 pa.press('enter')
 time.sleep(3)
 pa.click(x=837, y=702)
+quit
 print('Seu e-mail foi enviado com sucesso.')
 
 #teste

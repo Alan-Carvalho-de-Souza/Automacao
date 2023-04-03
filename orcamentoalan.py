@@ -45,9 +45,7 @@ time.sleep(2)
 pa.click(x=964, y=702)
 time.sleep(1)
 pa.click(x=382, y=641)
-pasta = f'''C:\Users\alan_\Documents\Excel'''
-with open(pasta, 'r', encoding='utf-8') as f:
-    lines = f.readlines()
+pasta = f'D:\Power Bi\Dados\Excel'
 pyperclip.copy(pasta)
 time.sleep(1)
 pa.press('enter')
