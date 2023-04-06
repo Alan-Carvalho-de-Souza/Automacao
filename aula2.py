@@ -1,1 +1,0 @@
-# aula 2 de banco de dados intensivao python
