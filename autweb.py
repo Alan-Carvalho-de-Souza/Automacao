@@ -66,6 +66,7 @@ Segue relatório da cotação de moedas, referente ao dia anterior.
 Qualquer dúvida estou à disposição.
 Atenciosamente.'''
 
+# Passo X: Logar no e-mail
 pa.press('win')
 time.sleep(2)
 pa.write('chrome')
@@ -84,53 +85,42 @@ pa.press('enter')
 time.sleep(3)
 pa.write('#Devautomacao2023#') #senha do e-mail
 pa.press('enter')
-time.sleep(2)
+time.sleep(5)
 pa.click(x=69, y=197)
 
+# Passo X: Escrever email 
 time.sleep(4)
 pa.write('automacoes.2023@gmail.com')
-pa.press('tab')
-time.sleep(2)
+pa.press('enter')
+time.sleep(1)
 pa.write('negociolojaonline.01@gmail.com')
-pa.press('tab')
-time.sleep(4)
+pa.press('enter')
+time.sleep(3)
 pa.press('tab')
 time.sleep(3)
-pyperclip.copy('Teste de automação 11') # Quando houver caracter especial utilizar pyperclip.copy
+pyperclip.copy('Teste de automação 12') # Quando houver caracter especial utilizar pyperclip.copy
 pa.hotkey('ctrl', 'v')
 time.sleep(2)
 pa.press('tab')
 
+# Passo X: Enviar para os destinatarios junto com anexo
 pyperclip.copy(descricao_email)
 pa.hotkey('ctrl', 'v')
 time.sleep(2)
-pa.click(x=964, y=702)
-time.sleep(1)
+pa.click(x=958, y=696)
+time.sleep(2)
 
-pa.click(x=382, y=641)
-pasta = f'''C:\Automacao'''
-pyperclip.copy(pasta)
-time.sleep(1)
+pa.click(x=247, y=419)
+pa.write('C:\Automacao')
 pa.press('enter')
 time.sleep(2)
 pa.click(x=359, y=420)
-time.sleep(1)
+time.sleep(2)
 pyperclip.copy('moedas')
-time.sleep(1)
+time.sleep(2)
 pa.hotkey('ctrl', "v")
 pa.press('enter')
-time.sleep(3)
-pa.click(x=837, y=702)
-"""
-navegador.find_element('xpath', '//*[@id="password"]/div[1]/div/div[1]/input').send_keys('#Devautomacao2023#')
-navegador.find_element('xpath', '/html/body/div[7]/div[3]/div/div[2]/div[1]/div[1]/div/div').click()
-navegador.find_element('xpath', '//*[@id=":u4"]').send_keys('automacoes.2023@gmail.com')
-navegador.find_element('xpath', '//*[@id=":u4"]').send_keys(Keys.TAB)
-navegador.find_element('xpath', '//*[@id=":u4"]').send_keys(Keys.TAB)
-navegador.find_element('xpath', '//*[@id=":q6"]').send_keys('Cotação de Moeda - 05.04.2023')
-navegador.find_element('xpath', '//*[@id=":q6"]').send_keys(Keys.TAB)
-pyperclip.copy(descricao_email)
-pa.hotkey('ctrl', 'v')
-navegador.find_element('xpath', '//*[@id=":pw"]').click()
-"""
+time.sleep(5)
+pa.hotkey('ctrl', 'enter')
+
 print('Seu e-mail foi enviado com sucesso!')
